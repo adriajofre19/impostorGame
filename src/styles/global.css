@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@layer base {
+	html,
+	body {
+		@apply w-full h-full;
+	}
+
+	body {
+		overscroll-behavior-y: none;
+		touch-action: manipulation;
+		-webkit-text-size-adjust: 100%;
+	}
+
+	input,
+	textarea,
+	select,
+	button {
+		/* Evita el auto-zoom de iOS al enfocar campos de formulario */
+		font-size: 16px;
+	}
+}
