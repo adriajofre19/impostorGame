@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-
-const words = ["Momia", "Payaso", "Gestion"];
+import { words } from '../data/words';
 
 export default function Home() {
 	const [players, setPlayers] = useState<string[]>([]);
